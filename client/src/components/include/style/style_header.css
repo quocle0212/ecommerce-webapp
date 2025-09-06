@@ -1,0 +1,412 @@
+/* HomeLife Store Header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top notification bar */
+.top-notification {
+    background: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Main navbar */
+.main-navbar {
+    background: #fff !important;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+.brand-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.brand-text:hover {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link-item {
+    color: #333 !important;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link-item:hover {
+    color: #1976d2 !important;
+    text-decoration: none;
+}
+
+/* Custom dropdown toggle */
+.dropdown-toggle-custom {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 10px 0 !important;
+}
+
+.dropdown-toggle-custom:focus {
+    box-shadow: none !important;
+}
+
+.dropdown-toggle-custom::after {
+    display: none !important;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.nav-dropdown.show .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdown-menu-custom {
+    border: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 15px 0;
+    margin-top: 15px;
+    min-width: 220px;
+    background: #fff;
+}
+
+.dropdown-menu-custom .dropdown-item {
+    color: #333 !important;
+    padding: 12px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.dropdown-menu-custom .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #1976d2 !important;
+    padding-left: 30px;
+}
+
+.dropdown-menu-custom .dropdown-item:active {
+    background-color: #e9ecef;
+    color: #1976d2 !important;
+}
+
+/* Legacy dropdown styles */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.dropdown-item {
+    color: #333 !important;
+    padding: 8px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #1976d2 !important;
+}
+
+/* Search bar */
+.search-container {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 50px 12px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #1976d2;
+}
+
+.search-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1976d2;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #1565c0;
+}
+
+/* HomeLife Header Actions */
+.hebekery-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.hebekery-search-icon,
+.hebekery-user-icon,
+.hebekery-cart-icon {
+    position: relative;
+    color: #1976d2;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(25, 118, 210, 0.1);
+}
+
+.hebekery-search-icon:hover,
+.hebekery-user-icon:hover,
+.hebekery-cart-icon:hover {
+    color: #1565c0;
+    text-decoration: none;
+    background: rgba(25, 118, 210, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+}
+
+.hebekery-cart-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ff5722;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(255, 87, 34, 0.4);
+}
+
+.hebekery-user-dropdown .dropdown-toggle {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.hebekery-user-dropdown .dropdown-toggle:focus {
+    box-shadow: none !important;
+}
+
+.hebekery-user-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Legacy styles for compatibility */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon {
+    position: relative;
+    color: #333;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.cart-icon:hover {
+    color: #00b4d8;
+    text-decoration: none;
+    background-color: rgba(0, 180, 216, 0.1);
+    transform: scale(1.1);
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff6b35;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+.login-btn {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: 1px solid #00b4d8;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: transparent;
+}
+
+.login-btn:hover {
+    background-color: #00b4d8;
+    color: white;
+    border-color: #00b4d8;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 180, 216, 0.3);
+}
+
+/* Mobile menu */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Suggestions dropdown */
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1050;
+    margin-top: 5px;
+}
+
+.suggestions-dropdown .list-group-item {
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestions-dropdown .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .search-container {
+        margin: 0 10px;
+        max-width: none;
+        flex: 1;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .search-input {
+        padding: 10px 40px 10px 15px;
+        font-size: 13px;
+    }
+
+    .search-btn {
+        width: 30px;
+        height: 30px;
+    }
+}
+

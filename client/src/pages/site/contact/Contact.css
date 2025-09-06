@@ -1,0 +1,334 @@
+/* Contact Page Styles */
+.contact-page {
+    padding-top: 40px;
+}
+
+/* Hero Section */
+.contact-hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8a50 100%);
+    color: white;
+    margin-bottom: 80px;
+}
+
+.contact-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.contact-title .highlight {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-subtitle {
+    font-size: 20px;
+    margin-bottom: 0;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 0 0 80px 0;
+    margin-top: -40px;
+}
+
+.contact-card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg, #ff6b35, #ff8a50);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.contact-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #495057;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.contact-card strong {
+    color: #ff6b35;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.contact-form-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    color: #6c757d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form-card .form-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+.contact-submit-btn {
+    background: linear-gradient(45deg, #ff6b35, #ff8a50);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-submit-btn:hover {
+    background: linear-gradient(45deg, #e55a2b, #e6743d);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+}
+
+/* Map Card */
+.map-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Social Card */
+.social-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #495057;
+}
+
+.social-link:hover {
+    color: white;
+    text-decoration: none;
+    transform: translateX(5px);
+}
+
+.social-link.facebook {
+    background: rgba(59, 89, 152, 0.1);
+}
+
+.social-link.facebook:hover {
+    background: #3b5998;
+}
+
+.social-link.instagram {
+    background: rgba(225, 48, 108, 0.1);
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-link.youtube {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.social-link.youtube:hover {
+    background: #ff0000;
+}
+
+.social-link svg {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.faq-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.faq-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.faq-card h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 36px;
+    }
+    
+    .contact-subtitle {
+        font-size: 18px;
+    }
+    
+    .contact-hero {
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+    
+    .contact-info {
+        padding: 0 0 60px 0;
+        margin-top: -30px;
+    }
+    
+    .contact-form-section {
+        padding: 60px 0;
+    }
+    
+    .faq-section {
+        padding: 60px 0;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .contact-submit-btn {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .social-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .social-link {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+        flex: 1;
+    }
+    
+    .social-link svg {
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .social-link span {
+        font-size: 12px;
+    }
+}

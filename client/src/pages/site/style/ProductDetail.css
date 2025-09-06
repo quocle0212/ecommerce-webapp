@@ -1,0 +1,458 @@
+/* HomeLife Store Product Detail Page Styles */
+
+/* Breadcrumb */
+.breadcrumb-section {
+    background: #f8f9fa;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumb-item a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+/* Product Detail Container */
+.product-detail-container {
+    margin-bottom: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.product-detail-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* Product Images */
+.product-images {
+    position: relative;
+}
+
+.product-images .main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #f2f2f2;
+}
+
+.image-thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 5px 0;
+}
+
+.image-thumbnails .thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.image-thumbnails .thumbnail:hover,
+.image-thumbnails .thumbnail.active {
+    border-color: #1976d2;
+}
+
+/* Product Info */
+.product-info {
+    padding-left: 30px;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rating {
+    font-size: 14px;
+}
+
+.rating-count, .sold-count {
+    color: #666;
+    font-size: 14px;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+.original-price {
+    color: #999;
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.discount-percent {
+    color: #dc3545;
+    font-size: 14px;
+    font-weight: 500;
+    background: #f8d7da;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.product-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Stock Status */
+.stock-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.stock-status.in-stock {
+    background: #d4edda;
+    color: #155724;
+}
+
+.stock-status.out-of-stock {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Product Actions */
+.product-actions {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.quantity-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.quantity-btn {
+    background: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background: #e9ecef;
+}
+
+.quantity-selector .form-control {
+    border: none;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-weight: 600;
+    outline: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.add-to-cart-btn {
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.add-to-cart-btn:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+}
+
+.buy-now-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.buy-now-btn:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+.product-policies {
+    font-size: 13px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.delivery-info {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.delivery-info h6 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+/* Product Tabs */
+.product-tabs {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 25px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #666;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #1976d2;
+}
+
+.nav-tabs .nav-link.active {
+    background: none;
+    border-color: transparent transparent #1976d2 transparent;
+    color: #1976d2;
+}
+
+.tab-content {
+    padding: 20px 0;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+    border: none;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.rating-average {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.rating-bars .progress {
+    background-color: #f2f2f2;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.rating-bars .progress-bar {
+    background-color: #ffc107;
+}
+
+.rating-filters .btn {
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-color: #e9ecef;
+    color: #666;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.rating-filters .btn:hover,
+.rating-filters .btn.active {
+    background-color: #1976d2;
+    border-color: #1976d2;
+    color: white;
+}
+
+/* Related Products Section */
+.related-products {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.related-products-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.product-card {
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-title-small {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-weight: 500;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.rating-small {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.price-small {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1976d2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-info {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .current-price {
+        font-size: 1.5rem;
+    }
+
+    .product-images .main-image {
+        height: 300px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .product-detail-card,
+    .product-tabs,
+    .related-products {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-images .main-image {
+        height: 250px;
+    }
+
+    .image-thumbnails .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .quantity-controls {
+        width: 120px;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+

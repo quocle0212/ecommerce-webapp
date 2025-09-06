@@ -1,0 +1,1 @@
+export const LOGO = "https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo-FPT-Shop-Black.png"

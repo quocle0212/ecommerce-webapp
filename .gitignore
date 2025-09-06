@@ -1,0 +1,6 @@
+.DS_Store
+.augmentignore
+.augmentconfig.json
+.idea
+vendor
+node_modules

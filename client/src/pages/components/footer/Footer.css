@@ -1,0 +1,203 @@
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 50px 0 20px;
+    position: relative;
+    border-top: 1px solid #e9ecef;
+    margin-top: 50px;
+}
+
+.footer-main {
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-title {
+    color: #00b4d8;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Contact Items */
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-contact-icon {
+    color: #00b4d8;
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.footer-contact-item span {
+    color: #555;
+}
+
+/* Business Info */
+.footer-business-info {
+    margin: 20px 0;
+}
+
+.footer-business-info p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Certifications */
+.footer-certifications {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cert-image {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cert-placeholder {
+    height: 40px;
+    width: 80px;
+    background: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #6c757d;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    line-height: 1.5;
+}
+
+.footer-links a:hover {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #e9ecef;
+    padding-top: 30px;
+}
+
+/* Social Media */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #00b4d8;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    background: #00b4d8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+    text-decoration: none;
+}
+
+/* Copyright */
+.copyright p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .footer-contact-item {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .footer-certifications {
+        justify-content: center;
+    }
+
+    .social-media {
+        gap: 10px;
+    }
+
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-title {
+        font-size: 14px;
+    }
+
+    .footer-contact-item {
+        font-size: 13px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .cert-image {
+        height: 35px;
+    }
+}
